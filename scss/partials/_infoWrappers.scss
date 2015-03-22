@@ -24,7 +24,7 @@
   @include transition(all 1s);
 
   &:hover {
-    color: darken($arrowColor, 15%);
+    color: darken($iconColor, 15%);
   }
 }
 
