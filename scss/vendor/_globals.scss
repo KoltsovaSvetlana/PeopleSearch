@@ -1,0 +1,65 @@
+@import "compass/reset";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+@import "compass/css3/transition";
+@import "../partials/variables";
+@import "mixins";
+@import "../partials/typography";
+
+body {
+  background: $bodyBackground;
+  font-family: $mainFontFamily;
+  font-size: $fontSizeBody;
+
+  @media only screen and (min-width: $breakSmall) and (max-width: $breakMiddle){
+    font-size: $fontSizeBodyMd;
+  }
+
+  @media only screen and (max-width: $breakSmall){
+    font-size: $fontSizeBodySm;
+  }
+
+  @media only screen and (max-width: $breakXSmall){
+    font-size: $fontSizeBodyXSm;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.textLeft {
+  text-align:left;
+}
+
+.textRight {
+  text-align:right;
+}
+
+.textCenter {
+  text-align:center;
+}
+
+.floatR {
+  float: right;
+}
+
+.floatL {
+  float: left;
+}
+
+.displNone {
+  display: none;
+}
+
+.displBlock {
+  display: block;
+}
+
+.displInlineBl {
+  display: inline-block;
+}
+
+@import "../sections/_header";
+@import "../sections/_content";
+@import "../sections/_footer";

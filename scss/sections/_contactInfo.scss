@@ -1,0 +1,39 @@
+.personPhoto {
+  width: 90px;
+  margin-right: 0.28em;
+  padding: 0.4em 0;
+  background: #d6d9db;
+  color: $titleColor;
+  font-size: 3.125em;
+  text-align: center;
+}
+
+.personData {
+  margin-bottom: 14px;
+  color: $additionalTextColor;
+
+  h1 {
+    padding-bottom: 0.35em;
+    font-size: 2.18em;
+    font-weight: bold;
+  }
+
+  p {
+    margin-left: 104px;
+    padding-top: 0.27em;
+    font-size: 1.125em;
+  }
+}
+
+.map {
+  width: 100%;
+  height: 310px;
+
+  @media only screen and (max-width: $breakMiddle){
+    height: 370px;
+  }
+
+  @media only screen and (max-width: $breakSmall){
+    height: 300px;
+  }
+}

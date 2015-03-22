@@ -1,0 +1,23 @@
+.titleSection {
+  padding: 0.77em 1.5em;
+  color: $titleColor;
+  font-family: $mainFontFamily;
+  font-size: 1.5em;
+  font-weight: bold;
+
+  @media only screen and (max-width: $breakMiddle) {
+    padding: 1em 0.8em;
+  }
+}
+
+.lightTitle {
+  background: $primeLightColor;
+}
+
+.primeTitle {
+  background: $primeColor;
+ }
+
+.darkTitle {
+  background: $primeDarkColor;
+}

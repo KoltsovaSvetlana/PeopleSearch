@@ -1,0 +1,121 @@
+.btn {
+  @include border-radius(4px);
+  text-decoration: none;
+  cursor: pointer;
+  @include transition(all 1s);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.smallBtn {
+  padding: 0.65em 2em 0.55em;
+  font-size: 0.94em;
+  
+  @media only screen and (max-width: $breakMiddle) {
+    padding: 1em 3.4em;
+    font-size: 1.75em;
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: 720px) {
+      padding: 0.75em 2.75em;
+  }
+
+  @media only screen and (max-width: 605px) {
+      padding: 0.57em 1.55em;
+  }
+}
+
+.bigBtn {
+  padding: 0.74em 1.42em;
+  font-size: 1.1875em;
+  font-weight: bold;
+}
+
+.updateBtn {
+  background: $secondColor;
+  color: #fff;
+  @include hoverShadow($secondColor);
+}
+
+.primeBtn {
+  background: #fff;
+  color: $primeColor;
+  @include hoverShadow(#fff, lighten($primeColor, 10%));
+}
+
+.primeDarkBtn {
+  background: #fff;
+  color: $primeDarkColor;
+  @include hoverShadow(#fff, lighten($primeDarkColor, 10%));
+}
+
+.primeLightkBtn {
+  background: $btnLightBg;
+  color: $additionalTextColor;
+  font-weight: normal;
+  @include hoverShadow($btnLightBg);
+}
+
+.btnQuestion {
+  margin-top: 3px;
+  padding: 0em 0.2em;
+  font-size: 0.7em;
+  font-family: 'Arial';
+  font-weight: bold;
+  color: $titleColor;
+  border: 2px solid $titleColor;
+  @include border-radius(50%);
+  cursor: pointer;
+  @include transition(all 1s);
+  $shadow: darken($titleColor, 15%);
+
+  &:hover {
+    color: $shadow;
+    border-color: $shadow;
+  }
+}
+
+.viewAllBtn {
+  display: inline-block;
+  padding: 1.5em 0 1em 0;
+  color: $primeColor;
+  cursor: pointer;
+  @include transition(all 1s);
+
+  @media only screen and (max-width: $breakMiddle) {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  &:hover {
+    color: lighten($primeColor, 15%);
+  }
+}
+
+.roundBtn {
+  position: absolute;
+  right: -5px;
+  margin-top: -60px;
+
+  @media only screen and (max-width: 1140px),(min-width:1200px ) and (max-width: 1330px) {
+    margin: 10px;
+  }
+
+  &:before {
+    font-size: 0.45em;
+    padding: 1.1em;
+    background: #e9e9e9;
+    color: #fff;
+    @include transition(all 1s);
+    @include border-radius(50%);
+    @include hoverShadow();
+    cursor: pointer;
+  }
+}

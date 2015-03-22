@@ -1,0 +1,70 @@
+//footer {
+//  background: $commonColor;
+//  padding: 40px 0px 35px 0px;
+//
+//  @media only screen and (max-width: $breakSmall) {
+//    padding-bottom: 70px;
+//  }
+//}
+
+footer {
+  margin-top: 75px;
+  padding: 60px 20px 20px;
+  border-top: 1px solid $borderInfoWrap;
+  background: $footerBackground;
+  font-size: 0.9375em;
+  color: $footerColor;
+
+  a {
+    font-size: 1em;
+    color: $primeColor;
+    @include transition(all 1s);
+
+    &:hover {
+      color: $primeDarkColor;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}
+
+.findByAlphabet {
+  padding-bottom: 35px;
+  border-bottom: 1px solid $borderInfoWrap;
+
+  a {
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-size: 1.13em;
+    line-height: 1.5em;
+  }
+}
+
+.markerList {
+  padding: 35px 0px;
+  border-bottom: 1px solid $borderInfoWrap;
+
+  li {
+    display: inline-block;
+  }
+}
+
+footer .detail {
+  padding: 35px 135px;
+  border-bottom: 1px solid $borderInfoWrap;
+  line-height: 1.5em;
+}
+
+.sealIcon {
+  padding-top: 35px;
+  
+  a {
+    padding: 0 10px;
+  }
+}
+
+.copyright {
+  padding-top: 40px;
+  color: #a7a7a7;
+  font-size: 0.86em;
+}

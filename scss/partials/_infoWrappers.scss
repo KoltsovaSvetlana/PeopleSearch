@@ -1,0 +1,75 @@
+.infoWrap {
+  margin-top: 0.7em;
+  padding: 1.25em 30px;
+  background: $infoWrapBg;
+  border: 1px solid $borderInfoWrap;
+  @include box-shadow(2px 2px 3px $borderInfoWrap);
+  @include border-radius(4px);
+
+  @media only screen and (max-width: $breakXSmall){
+    padding: 1.25em;
+  }
+}
+
+.titleWrap {
+  padding: 0em 30px;
+  @extend .smallText;
+}
+
+.arrAddressWrap.icon-arr-round-right, .arrRelativeWrap.icon-arr-round-right {
+  padding: 0.4em 0.5em;
+  font-size: 2.25em;
+  color: #d6d9db;
+  cursor: pointer;
+  @include transition(all 1s);
+
+  &:hover {
+    color: darken($arrowColor, 15%);
+  }
+}
+
+.arrAddressWrap.icon-arr-round-right {
+  position: absolute;
+  right: 20px;
+}
+
+.arrRelativeWrap.icon-arr-round-right {
+  float: right;
+  margin-right: -10px;
+}
+
+.primInfWrap {
+  margin-left: -15px;
+  background: $primeColor;
+}
+
+
+.primDarkInfWrap {
+  margin-right: -15px;
+  background: $primeDarkColor;
+}
+
+.primInfWrap, .primDarkInfWrap {
+  margin-top: 2em;
+  padding: 3.75em 4.5em;
+  text-align: center;
+  color: #fff;
+  @include border-radius(4px);
+
+  h2 {
+    padding-bottom: 1.14em;
+    font-size: 1.875em;
+    font-weight: bold;
+    line-height: 1.25em;
+  }
+
+  p {
+    padding: 0 1.67em 2.25em;
+    font-size: 1.125em;
+    line-height: 1.3em;
+  }
+
+  @media only screen and (max-width: $breakLarge){
+    padding: 3.75em 2.3em;
+  }
+}

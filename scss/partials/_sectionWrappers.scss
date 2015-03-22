@@ -1,0 +1,18 @@
+.lightWrap {
+  padding: 2.25em 17px;
+  background: $primeLightColor;
+  border: 1px solid $borderInfoWrap;
+
+  @media only screen and (max-width: $breakXSmall){
+    padding: 2.25em 0px;
+  }
+}
+
+.darkWrap {
+  padding: 3.75em 4.375em;
+  background: $primeDarkColor;
+
+  @media only screen and (max-width: $breakMiddle){
+    text-align: center;
+  }
+}

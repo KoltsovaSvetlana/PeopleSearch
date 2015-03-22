@@ -1,0 +1,68 @@
+.relativeData {
+  padding: 4px 0px;
+}
+
+.name {
+  width: 33%;
+  .titleWrap & {
+    margin-left: 74px;
+  }
+}
+
+.age {
+  width: 10%;
+}
+
+.address {
+  width: 28%;
+}
+
+.details {
+  width: 18%;
+  text-align: right;
+}
+
+.relativeData {
+  .name {
+    font-size: 1.56em;
+    color: $primeColor;
+  }
+
+  .age {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: $additionalTextColor;
+  }
+
+  .address {
+    color: $additionalTextColor;
+  }
+
+  .details {
+    color: $primeColor;
+  }
+}
+
+@media only screen and (max-width: $breakMiddle){
+  .relativeData {
+    .name, .age, .address {
+      color: $primeColor;
+      font-size: 1.5em;
+    }
+
+    .name, .age {
+      width: auto;
+      font-weight: bold;
+    }
+
+    .address {
+      width: auto;
+      display: block;
+      margin-left: 74px;
+    }
+
+    .icon-people {
+      padding-top: 0.4em;
+    }
+  }
+}

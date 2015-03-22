@@ -1,0 +1,57 @@
+.ieDisplNone {
+  display: none;
+}
+
+.infoWrap {
+  padding: 20px 30px 30px 30px;
+}
+
+[class *= "icon-"] {
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.personPhoto, .icon-people {
+  padding: 0.4em 0;
+  background-image: url("../img/icon_ie/person.png");
+}
+
+.icon-call {
+  padding: 7px;
+  background-image: url("../img/icon_ie/call.png");
+}
+
+.icon-location {
+  padding: 11px 7px;
+  background-image: url("../img/icon_ie/location.png");
+}
+
+.icon-email {
+  background-image: url("../img/icon_ie/email.png");
+}
+
+.icon-directions {
+  padding: 8px;
+  background-image: url("../img/icon_ie/address.png");
+}
+
+.emailWrap {
+  margin-bottom: 0.7em;
+}
+
+.map.infoWrap {
+  background: url("../img/map.jpg")no-repeat;
+}
+
+.criminalInfo {
+  text-align: center;
+}
+
+.primInfWrap, .primDarkInfWrap {
+   margin: 2em 0;
+}
+
+.details {
+  padding: 10px 0;
+  width: auto;
+}

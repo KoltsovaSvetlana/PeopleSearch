@@ -1,0 +1,58 @@
+.addressData .floatR {
+  @media only screen and (max-width: $breakMiddle) {
+    float: none;
+  }
+}
+
+.addressData p {
+  margin-left: 74px;
+  padding: 0.6em 0;
+  font-weight: bold;
+  font-size: 1.25em;
+  color: $primeColor;
+
+  @media only screen and (max-width: $breakSmall) {
+    padding: 0.6em 1.5em 0em 0em;
+    font-weight: normal;
+  }
+}
+
+.addressData span {
+  padding: 1.3em 0 0 2em;
+  font-size: 0.8em;
+}
+
+span.currAddress, span.priorAddress {
+  padding: 1.3em 0 0 0em;
+  text-transform: uppercase;
+
+  @media only screen and (max-width: $breakMiddle) {
+    font-size: 1em;
+  }
+}
+
+.priorAddress {
+  color: $infoTextColor;
+}
+
+.currAddress{
+  color: $secondColor;
+}
+
+.viewDetails {
+  color: $primeColor;
+
+  &:after {
+    padding-left: 5px;
+    content: "\25BC";
+    font-size: 0.75em;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.additionalData {
+  padding: 20px 0px;
+}

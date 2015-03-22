@@ -1,0 +1,70 @@
+/* line 1, ../scss/ie.scss */
+.ieDisplNone {
+  display: none;
+}
+
+/* line 5, ../scss/ie.scss */
+.infoWrap {
+  padding: 20px 30px 30px 30px;
+}
+
+/* line 9, ../scss/ie.scss */
+[class*="icon-"] {
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+/* line 14, ../scss/ie.scss */
+.personPhoto, .icon-people {
+  padding: 0.4em 0;
+  background-image: url("../img/icon_ie/person.png");
+}
+
+/* line 19, ../scss/ie.scss */
+.icon-call {
+  padding: 7px;
+  background-image: url("../img/icon_ie/call.png");
+}
+
+/* line 24, ../scss/ie.scss */
+.icon-location {
+  padding: 11px 7px;
+  background-image: url("../img/icon_ie/location.png");
+}
+
+/* line 29, ../scss/ie.scss */
+.icon-email {
+  background-image: url("../img/icon_ie/email.png");
+}
+
+/* line 33, ../scss/ie.scss */
+.icon-directions {
+  padding: 8px;
+  background-image: url("../img/icon_ie/address.png");
+}
+
+/* line 38, ../scss/ie.scss */
+.emailWrap {
+  margin-bottom: 0.7em;
+}
+
+/* line 42, ../scss/ie.scss */
+.map.infoWrap {
+  background: url("../img/map.jpg") no-repeat;
+}
+
+/* line 46, ../scss/ie.scss */
+.criminalInfo {
+  text-align: center;
+}
+
+/* line 50, ../scss/ie.scss */
+.primInfWrap, .primDarkInfWrap {
+  margin: 2em 0;
+}
+
+/* line 54, ../scss/ie.scss */
+.details {
+  padding: 10px 0;
+  width: auto;
+}

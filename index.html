@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="language" content="english" />
+		<meta name="robots" content="index, follow" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta name="author" content="Koltsova Svetlana" />
+		<meta name="copyright" content="Koltsova Svetlana - 2015" />
+		<meta name="description" content="Search of People" />
+		<meta name="keywords" content="People, Search" />
+		<title>People Search</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link rel="stylesheet" href="css/lib/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/lib/bootstrap.min.js"></script>
+		<!--[if lte IE 8]>
+		<link rel="stylesheet" href="css/ie.css" />
+		<![endif]-->
+	</head>
+	<body>
+        <header></header>
+        <section><!-- section1 -->
+        </section><!-- end section1 -->
+        <section><!-- section2 -->
+            <div class="container">
+                <div class="row">
+                    <h2 class="titleSection primeTitle">Contact Information
+                        <span class="btnQuestion floatR" data-container="body" data-toggle="popover" data-placement="bottom"
+                              data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</span>
+                    </h2>
+                </div>
+                <div class="row lightWrap">
+                    <div class="col-xs-12">
+                        <span class="personPhoto icon-people floatL"></span>
+                        <div class="personData">
+                            <h1>Jonathan F. Smithy</h1>
+                            <p>Age: 35</p>
+                            <p>Born: Jun 10, 1978</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="infoWrap">
+                            <span class="icon-call floatL"></span>
+                            <div class="callData">
+                                <h3 class="lightText smallText">Home phone</h3>
+                                <p class="primeText bigText">(303) 576-1412</p>
+                            </div>
+                        </div>
+                        <div class="infoWrap">
+                            <span class="icon-location floatL"></span>
+                            <div class="locationData">
+                                <h3 class="lightText smallText">Current address</h3>
+                                <p class="primeText middleText">1865 Elm Street<br/>
+                                    Palo Alto, CA 95640</p>
+                            </div>
+                        </div>
+                        <div class="infoWrap emailWrap">
+                            <span class="icon-email floatL"></span>
+                            <div class="emailData">
+                                <h3 class="lightText smallText">Email address</h3>
+                                <a href="mailto:test@gmail.com" class="primeText middleText displBlock">Send a Message</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-xs col-sm-6">
+                        <div class="map infoWrap"></div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- end section2 -->
+        <section><!-- section3 -->
+            <div class="container">
+                <div class="row">
+                    <h2 class="titleSection primeTitle">Criminal Records</h2>
+                </div>
+                <div class="row darkWrap criminalInfo">
+                    <div class="col-xs-12 col-md-6">
+                        <h2>Find out if Jack Keroac has any criminal records.</h2>
+                        <p>Check our national court records database to find available online court records. Results may
+                            include criminal records, judgments, liens, bankruptcies, motor accidents, inmate records,
+                            and more.</p>
+                        <input class="btn smallBtn updateBtn" type="button" value="Upgrade Report"/>
+                        <span class="btnQuestion hidden-sm hidden-xs" data-container="body" data-toggle="popover" data-placement="bottom"
+                              data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</span>
+                    </div>
+                    <div class="hidden-xs hidden-sm col-sm-offset-2 col-sm-4 courtWrap ieDisplNone">
+                        <span class="icon-court floatL"></span>
+                    </div>
+                </div>
+            </div>
+        </section><!-- end section3 -->
+        <section><!-- section4 -->
+            <div class="container">
+                <div class="row">
+                    <h2 class="titleSection primeTitle">Address History
+                        <span class="btnQuestion floatR" data-container="body" data-toggle="popover" data-placement="bottom"
+                              data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."> ? </span>
+                    </h2>
+                </div>
+                <div id="address" class="row lightWrap">
+                    <div class="col-xs-12">
+                        <div class="infoWrap">
+                            <span class="icon-directions floatL"></span>
+                            <div class="addressData">
+                                <div class="floatR">
+                                    <span class="_accordionTitle viewDetails floatR hidden-sm hidden-xs">View Details</span>
+                                    <span class="currAddress floatR">CURRENT ADDRESS</span>
+                                    <span class="_accordionTitle icon-arr-round-right arrAddressWrap hidden-lg hidden-md"></span>
+                                </div>
+                                <div>
+                                    <p>3212 Channing Way, San Francisco, CA 94131</p>
+                                </div>
+                            </div>
+                            <div class="_accordionContent additionalData displNone">
+                                 <div class="map infoWrap"></div>
+                            </div>
+                        </div>
+                        <div class="infoWrap">
+                            <span class="icon-directions floatL"></span>
+                            <div class="addressData">
+                                <div class="floatR">
+                                    <span class="_accordionTitle viewDetails floatR hidden-sm hidden-xs">View Details</span>
+                                    <span class="priorAddress floatR">PRIOR ADDRESS</span>
+                                    <span class="_accordionTitle icon-arr-round-right arrAddressWrap hidden-lg hidden-md"></span>
+                                </div>
+                                <div>
+                                    <p>1865 Elm Street, Palo Alto, CA 95640</p>
+                                </div>
+                            </div>
+                            <div class="_accordionContent additionalData displNone">
+                                <div class="map infoWrap"></div>
+                            </div>
+                        </div>
+                        <div class="infoWrap">
+                            <span class="icon-directions floatL"></span>
+                            <div class="addressData">
+                                <div class="floatR">
+                                    <span class="_accordionTitle viewDetails floatR hidden-sm hidden-xs">View Details</span>
+                                    <span class="priorAddress floatR">PRIOR ADDRESS</span>
+                                    <span class="_accordionTitle icon-arr-round-right arrAddressWrap hidden-lg hidden-md"></span>
+                                </div>
+                                <div>
+                                    <p class="primeText middleText">3485 Oakberry Way, San Jose, CA 95123</p>
+                                </div>
+                            </div>
+                            <div class="_accordionContent additionalData displNone">
+                                <div class="map infoWrap"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <span id="showAddress" class="viewAllBtn">View all 5 Address</span>
+                        </div>
+                        <div class="displNone"><!-- show/hide block -->
+                            <div class="infoWrap">
+                                <span class="icon-directions floatL"></span>
+                                <div class="addressData">
+                                    <div class="floatR">
+                                        <span class="_accordionTitle viewDetails floatR hidden-sm hidden-xs">View Details</span>
+                                        <span class="priorAddress floatR">PRIOR ADDRESS</span>
+                                        <span class="_accordionTitle icon-arr-round-right arrAddressWrap hidden-lg hidden-md"></span>
+                                    </div>
+                                    <div>
+                                        <p class="primeText middleText">3485 Oakberry Way, San Jose, CA 8751</p>
+                                    </div>
+                                </div>
+                                <div class="_accordionContent additionalData displNone">
+                                    <div class="map infoWrap"></div>
+                                </div>
+                            </div>
+                            <div class="infoWrap">
+                                <span class="icon-directions floatL"></span>
+                                <div class="addressData">
+                                    <div class="floatR">
+                                        <span class="_accordionTitle viewDetails floatR hidden-sm hidden-xs">View Details</span>
+                                        <span class="priorAddress floatR">PRIOR ADDRESS</span>
+                                        <span class="_accordionTitle icon-arr-round-right arrAddressWrap hidden-lg hidden-md"></span>
+                                    </div>
+                                    <div>
+                                        <p class="primeText middleText">3985 Oakberry Way, San Jose, CA 3351</p>
+                                    </div>
+                                </div>
+                                <div class="_accordionContent additionalData displNone">
+                                    <div class="map infoWrap"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span id="hideAddress" class="viewAllBtn">Hide last Address</span>
+                            </div>
+                        </div><!-- end show/hide block -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- end section4 -->
+        <section><!-- section5 -->
+            <div class="container">
+                <div class="row">
+                    <h2 class="titleSection primeTitle">Phone Numbers
+                        <span class="btnQuestion floatR" data-container="body" data-toggle="popover" data-placement="bottom"
+                              data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</span>
+                    </h2>
+                </div>
+                <div class="row lightWrap">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="infoWrap">
+                            <span class="icon-call floatL"></span>
+                            <div class="callData">
+                                <h3 class="lightText smallText">Home phone</h3>
+                                <p class="primeText bigText">(303) 576-1412</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="infoWrap">
+                            <span class="icon-call floatL"></span>
+                            <div class="callData">
+                                <h3 class="lightText smallText">Work phone</h3>
+                                <p class="primeText bigText">(800) 767-7826</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 hidden-lg hidden-md hidden-sm">
+                        <div class="infoWrap">
+                            <span class="icon-call floatL"></span>
+                            <div class="callData">
+                                <h3 class="lightText smallText">Work phone</h3>
+                                <p class="primeText bigText">(800) 767-7812</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <span id="showPhone" class="viewAllBtn">View all 5 Phone Numbers</span>
+                    </div>
+                    <div class="displNone">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="infoWrap">
+                                <span class="icon-call floatL"></span>
+                                <div class="callData">
+                                    <h3 class="lightText smallText">Home phone</h3>
+                                    <p class="primeText bigText">(303) 576-1412</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="infoWrap">
+                                <span class="icon-call floatL"></span>
+                                <div class="callData">
+                                    <h3 class="lightText smallText">Work phone</h3>
+                                    <p class="primeText bigText">(800) 767-7826</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <span id="hidePhone" class="viewAllBtn">Hide last Phone Numbers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- end section5 -->
+        <section><!-- section6 -->
+            <div class="container">
+                <div class="row">
+                    <h2 class="titleSection primeTitle">Relatives
+                        <span class="btnQuestion floatR" data-container="body" data-toggle="popover" data-placement="bottom"
+                              data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</span>
+                    </h2>
+                </div>
+                <div class="row lightWrap">
+                    <div class="col-xs-12">
+                        <div class="titleWrap hidden-sm hidden-xs">
+                            <div class="displInlineBl lightText name">Name</div>
+                            <div class="displInlineBl lightText age">Age</div>
+                            <div class="displInlineBl lightText address">Address</div>
+                            <div class="displInlineBl lightText details">Complete details</div>
+                        </div>
+                        <div class="infoWrap">
+                            <span class="icon-people floatL"></span>
+                            <span class="icon-arr-round-right arrRelativeWrap hidden-lg hidden-md"></span>
+                            <div class="relativeData">
+                                <div class="displInlineBl name">
+                                    Carl Kaeruac<span class="hidden-lg hidden-md">, </span>
+                                </div>
+                                <div class="displInlineBl age">27</div>
+                                <div class="displInlineBl address">452 Elm Street<br/>San Francisco, CA 94132</div>
+                                <div class="displInlineBl details hidden-sm hidden-xs"><a href="">View Contact Info</a></div>
+                            </div>
+                        </div>
+                        <div class="infoWrap">
+                            <span class="icon-people floatL"></span>
+                            <span class="icon-arr-round-right arrRelativeWrap hidden-lg hidden-md"></span>
+                            <div class="relativeData">
+                                <div class="displInlineBl name">
+                                    Moe J.Kaeruac<span class="hidden-lg hidden-md">, </span>
+                                </div>
+                                <div class="displInlineBl age">32</div>
+                                <div class="displInlineBl address">3433 Mission Street<br/>San Francisco, CA 94113</div>
+                                <div class="displInlineBl details hidden-sm hidden-xs"><a href="">View Contact Info</a></div>
+                            </div>
+                        </div>
+                        <div class="infoWrap">
+                            <span class="icon-people floatL"></span>
+                            <span class="icon-arr-round-right arrRelativeWrap hidden-lg hidden-md"></span>
+                            <div class="relativeData">
+                                <div class="displInlineBl name">
+                                    Marlin Karuac<span class="hidden-lg hidden-md">, </span>
+                                </div>
+                                <div class="displInlineBl age">61</div>
+                                <div class="displInlineBl address">1674 Delores Street <br/>San Francisco, CA 94565</div>
+                                <div class="displInlineBl details hidden-sm hidden-xs"><a href="">View Contact Info</a></div>
+                            </div>
+                        </div>
+                        <div>
+                            <span id="showRelatives" class="viewAllBtn">View all 5 Relatives</span>
+                        </div>
+                        <div class="displNone"><!-- show/hide block -->
+                            <div class="infoWrap">
+                                <span class="icon-people floatL"></span>
+                                <span class="icon-arr-round-right arrRelativeWrap hidden-lg hidden-md"></span>
+                                <div class="relativeData">
+                                    <div class="displInlineBl name">
+                                        Tomas Berg<span class="hidden-lg hidden-md">, </span>
+                                    </div>
+                                    <div class="displInlineBl age">37</div>
+                                    <div class="displInlineBl address">452 Elm Street<br/>San Francisco, CA 94132</div>
+                                    <div class="displInlineBl details hidden-sm hidden-xs"><a href="">View Contact Info</a></div>
+                                </div>
+                            </div>
+                            <div class="infoWrap">
+                                <span class="icon-people floatL"></span>
+                                <span class="icon-arr-round-right arrRelativeWrap hidden-lg hidden-md"></span>
+                                <div class="relativeData">
+                                    <div class="displInlineBl name">
+                                        Mary Kaeruac<span class="hidden-lg hidden-md">, </span>
+                                    </div>
+                                    <div class="displInlineBl age">45</div>
+                                    <div class="displInlineBl address">452 Elm Street<br/>San Francisco, CA 94132</div>
+                                    <div class="displInlineBl details hidden-sm hidden-xs"><a href="">View Contact Info</a></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span id="hideRelatives" class="viewAllBtn">Hide last Relatives</span>
+                            </div>
+                        </div><!-- end show/hide block -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- end section6 -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <h2 class="titleSection primeTitle">Neighbors
+                        <span class="btnQuestion floatR" data-container="body" data-toggle="popover" data-placement="bottom"
+                              data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">?</span>
+                    </h2>
+                </div>
+                <div class="row lightWrap">
+                    <div class="col-xs-12">
+                        <div class="titleWrap hidden-sm hidden-xs">
+                            <div class="displInlineBl lightText name">Name</div>
+                            <div class="displInlineBl lightText age">Age</div>
+                            <div class="displInlineBl lightText address">Address</div>
+                            <div class="displInlineBl lightText details">Complete details</div>
+                        </div>
+                        <div class="infoWrap">
+                            <span class="icon-people floatL"></span>
+                            <span class="icon-arr-round-right arrRelativeWrap hidden-lg hidden-md"></span>
+                            <div class="relativeData">
+                                <div class="displInlineBl name">
+                                    Paul Smith<span class="hidden-lg hidden-md">, </span>
+                                </div>
+                                <div class="displInlineBl age">68</div>
+                                <div class="displInlineBl address">1861 Elm Street<br/>Palo Alto, CA 95640</div>
+                                <div class="displInlineBl details hidden-sm hidden-xs"><a href="">View Contact Info</a></div>
+                            </div>
+                        </div>
+                        <div class="infoWrap">
+                            <span class="icon-people floatL"></span>
+                            <span class="icon-arr-round-right arrRelativeWrap hidden-lg hidden-md"></span>
+                            <div class="relativeData">
+                                <div class="displInlineBl name">
+                                    Jaqueline Onassis<span class="hidden-lg hidden-md">, </span>
+                                </div>
+                                <div class="displInlineBl age">35</div>
+                                <div class="displInlineBl address">1873 Elm Street<br/>Palo Alto, CA 95640</div>
+                                <div class="displInlineBl details hidden-sm hidden-xs"><a href="">View Contact Info</a></div>
+                            </div>
+                        </div>
+                        <div class="infoWrap">
+                            <span class="icon-people floatL"></span>
+                            <span class="icon-arr-round-right arrRelativeWrap hidden-lg hidden-md"></span>
+                            <div class="relativeData">
+                                <div class="displInlineBl name">
+                                    Samantha Jones<span class="hidden-lg hidden-md">, </span>
+                                </div>
+                                <div class="displInlineBl age">42</div>
+                                <div class="displInlineBl address">1867 Elm Street<br/>Alto, CA 95640</div>
+                                <div class="displInlineBl details hidden-sm hidden-xs"><a href="">View Contact Info</a></div>
+                            </div>
+                        </div>
+                        <div>
+                            <span id="showNeighbors" class="viewAllBtn">View all 5 Relatives</span>
+                        </div>
+                        <div class="displNone"><!-- show/hide block -->
+                            <div class="infoWrap">
+                                <span class="icon-people floatL"></span>
+                                <span class="icon-arr-round-right arrRelativeWrap hidden-lg hidden-md"></span>
+                                <div class="relativeData">
+                                    <div class="displInlineBl name">
+                                        Tomas Berg<span class="hidden-lg hidden-md">, </span>
+                                    </div>
+                                    <div class="displInlineBl age">37</div>
+                                    <div class="displInlineBl address">452 Elm Street<br/>San Francisco, CA 94132</div>
+                                    <div class="displInlineBl details hidden-sm hidden-xs"><a href="">View Contact Info</a></div>
+                                </div>
+                            </div>
+                            <div class="infoWrap">
+                                <span class="icon-people floatL"></span>
+                                <span class="icon-arr-round-right arrRelativeWrap hidden-lg hidden-md"></span>
+                                <div class="relativeData">
+                                    <div class="displInlineBl name">
+                                        Mary Kaeruac<span class="hidden-lg hidden-md">, </span>
+                                    </div>
+                                    <div class="displInlineBl age">45</div>
+                                    <div class="displInlineBl address">452 Elm Street<br/>San Francisco, CA 94132</div>
+                                    <div class="displInlineBl details hidden-sm hidden-xs"><a href="">View Contact Info</a></div>
+                                </div>
+                            </div>
+                            <div>
+                                <span id="hideNeighbors" class="viewAllBtn">Hide last Relatives</span>
+                            </div>
+                        </div><!-- end show/hide block -->
+                    </div>
+                    <div class="hidden-lg hidden-md textCenter">
+                        <input class="btn primeLightkBtn smallBtn scrollBtn" type="button" value="Back to Top"/>
+                    </div>
+                </div>
+            </div>
+        </section><!-- end section7 -->
+        <section><!-- section8 -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 hidden-sm hidden-xs">
+                        <div class="primInfWrap">
+                            <h2>Upgrade to view the owner’s full background Report</h2>
+                            <p>Move up to the next level of information density with a full background report.</p>
+                            <input class="btn primeBtn bigBtn" type="button" value="Upgrade Your Report"/>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 hidden-sm hidden-xs">
+                        <div class="primDarkInfWrap">
+                            <h2>Order additional records directly from the court</h2>
+                            <p>Send a court runner to fetch records that are not available online.</p>
+                            <input class="btn primeBtn bigBtn" type="button" value="Request Court Runner"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="scrollBtn roundBtn icon-arr-round-up hidden-sm hidden-xs"></span>
+        </section><!-- end section8 -->
+        <footer class="hidden-sm hidden-xs">
+            <div class="container">
+                <div class="footerTop">
+                    <p class="findByAlphabet textCenter">
+                        <span class="bold">People Directory:</span>
+                        <a href="">a</a>
+                        <a href="">b</a>
+                        <a href="">c</a>
+                        <a href="">d</a>
+                        <a href="">e</a>
+                        <a href="">f</a>
+                        <a href="">g</a>
+                        <a href="">h</a>
+                        <a href="">i</a>
+                        <a href="">j</a>
+                        <a href="">k</a>
+                        <a href="">l</a>
+                        <a href="">m</a>
+                        <a href="">n</a>
+                        <a href="">o</a>
+                        <a href="">p</a>
+                        <a href="">q</a>
+                        <a href="">r</a>
+                        <a href="">s</a>
+                        <a href="">t</a>
+                        <a href="">u</a>
+                        <a href="">v</a>
+                        <a href="">w</a>
+                        <a href="">x</a>
+                        <a href="">y</a>
+                        <a href="">z</a>
+                    </p>
+                </div>
+                <nav class="textCenter">
+                    <ul class="markerList">
+                        <li><a href="">Home</a></li>
+                        <li>&bull; <a href="">AboutUs</a></li>
+                        <li>&bull; <a href="">Blog</a></li>
+                        <li>&bull; <a href="">Privacy Center</a></li>
+                        <li>&bull; <a href="">Manage Your Listing</a></li>
+                        <li>&bull; <a href="">Common Uses</a></li>
+                        <li>&bull; <a href="">Court Records</a></li>
+                        <li>&bull; <a href="">Country Records</a></li>
+                        <li>&bull; <a href="">Criminal Records</a></li>
+                        <li>&bull; <a href="">SiteMap</a></li>
+                        <li>&bull; <a href="">Help</a></li>
+                    </ul>
+                </nav>
+                <p class="textCenter detail">
+                    PeopleSmart is designed to help you safely find people and learn about others. Find someone by name,
+                    email, phone number, and address. PeopleSmart is not a consumer reporting agency as defined by 
+                    the guidelines of the <a href="">Fair Credit Reporting Act</a>. To learn more, read our <a
+                        href="">Terms of Service</a> and <a href="">Privacy Policy</a>.
+                </p>
+                <div class="textCenter sealIcon">
+                    <a  href="" target="_blank">
+                        <img alt="Vericing Secured" src="img/verising.png">
+                    </a>
+                    <a href="" target="_blank">
+                        <img alt="BB Accredited Business" src="img/BBB.png">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="img/truste.png" alt="TRUSTe">
+                    </a>
+                </div>
+                <p class="copyright  bold textCenter">
+                    All rights reserved. © 2013 PeopleSmart
+                </p>
+            </div>
+        </footer>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
